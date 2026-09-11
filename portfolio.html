@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://tse4.mm.bing.net/th/id/OIP.k-jPUdCaQOr-oW3nPWjOaQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <title>Developer Portfolio</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="max-w-6xl nav-container">
+            <a href="#hero" class="logo">
+                <span>&lt;/&gt;</span>
+                <span>DevPortfolio</span>
+            </a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills & Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="#contact" class="btn-green" style="display: none;">Get in Touch</a>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="max-w-6xl hero-grid">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for Opportunities</span>
+                </div>
+                <h1>Hi, I'm <span>Muhammad Ibrahim</span></h1>
+                <p class="hero-desc">
+                    Web and Mobile App Developer student building modern applications with PHP, React, JavaScript, and Flutter.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-green">
+                        <span>Explore Projects</span>
+                        <i class="fa-solid fa-arrow-right" style="font-size: 0.875rem; margin-left: 0.5rem;"></i>
+                    </a>
+                    <a href="#contact" class="btn-dark">
+                        <i class="fa-solid fa-envelope" style="color: var(--accentGreen);"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex-shrink: 0; position: relative;">
+                <div class="code-card">
+                    <div class="code-header">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                        <span style="font-size: 10px; color: var(--textGray); font-family: monospace; margin-left: 0.5rem;">portfolio.js</span>
+                    </div>
+                    <div class="code-body">
+                        <p><span style="color: var(--accentBlue);">const</span> developer = {</p>
+                        <p style="padding-left: 1rem;">name: <span style="color: #fde047;">"Muhammad Ibrahim"</span>,</p>
+                        <p style="padding-left: 1rem;">role: <span style="color: #fde047;">"Full Stack Dev"</span>,</p>
+                        <p style="padding-left: 1rem;">skills: [<span style="color: #fde047;">"PHP"</span>, <span style="color: #fde047;">"React"</span>, <span style="color: #fde047;">"Flutter"</span>],</p>
+                        <p style="padding-left: 1rem;">status: <span style="color: #fde047;">"Ready to Code"</span></p>
+                        <p>};</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-card-alt">
+        <div class="max-w-6xl">
+            <div class="section-header">
+                <h2>Personal & Social Details</h2>
+                <p>Get in touch or connect with me across professional networks.</p>
+            </div>
+
+            <div class="grid-2">
+                <!-- Contact Details -->
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-address-card" style="color: var(--accentGreen);"></i>
+                            <span>Contact Information</span>
+                        </h3>
+                        <div>
+                            <div class="info-box">
+                                <div class="icon-box"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <p style="font-size: 0.75rem; color: var(--textGray);">Full Name</p>
+                                    <p style="font-weight: 600;">Muhammad Ibrahim</p>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <p style="font-size: 0.75rem; color: var(--textGray);">Email Address</p>
+                                    <p style="font-weight: 600;">muhammad.ibrahim.dev.44@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <p style="font-size: 0.75rem; color: var(--textGray);">Location</p>
+                                    <p style="font-weight: 600;">Islamabad , Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-share-nodes" style="color: var(--accentBlue);"></i>
+                            <span>Professional Networks</span>
+                        </h3>
+                        <p style="color: var(--textGray); font-size: 0.875rem; margin-bottom: 1.5rem;">
+                            Explore my repositories, code commits, and professional history on LinkedIn and GitHub.
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <a href="https://github.com/muhammad-ibrahim-dev-44" target="_blank" class="info-box" style="text-decoration: none; color: inherit;">
+                                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.5rem; background: #1f2937; display: flex; align-items: center; justify-content: center; color: white;">
+                                    <i class="fa-brands fa-github" style="font-size: 1.25rem;"></i>
+                                </div>
+                                <div style="flex: 1;">
+                                    <p style="font-weight: 600;">GitHub Profile</p>
+                                    <p style="font-size: 0.75rem; color: var(--textGray);">github.com/muhammad-ibrahim-dev-44</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="color: #6b7280;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-ibrahim-dev44/" target="_blank" class="info-box" style="text-decoration: none; color: inherit;">
+                                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.5rem; background: rgba(37, 99, 235, 0.2); display: flex; align-items: center; justify-content: center; color: #60a5fa;">
+                                    <i class="fa-brands fa-linkedin" style="font-size: 1.25rem;"></i>
+                                </div>
+                                <div style="flex: 1;">
+                                    <p style="font-weight: 600;">LinkedIn Profile</p>
+                                    <p style="font-size: 0.75rem; color: var(--textGray);">linkedin.com/in/muhammad-ibrahim-dev44</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="color: #6b7280;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills">
+        <div class="max-w-6xl">
+            <div class="section-header">
+                <h2>Skill Set & Education</h2>
+                <p>My technical stack and vocational/academic background.</p>
+            </div>
+
+            <div class="grid-2">
+                <!-- Technical Stack -->
+                <div class="card">
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fa-solid fa-code" style="color: var(--accentGreen);"></i>
+                        <span>Technical Stack</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-php" style="font-size: 2rem; color: #818cf8; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-mobile-screen-button" style="font-size: 2rem; color: #ef4444; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-html5" style="font-size: 2rem; color: #f97316; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt" style="font-size: 2rem; color: #3b82f6; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">CSS & Tailwind</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js" style="font-size: 2rem; color: #facc15; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-react" style="font-size: 2rem; color: #60a5fa; margin-bottom: 0.5rem;"></i>
+                            <span style="font-size: 0.875rem; font-weight: 600;">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Background -->
+                <div class="card">
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-graduation-cap" style="color: var(--accentBlue);"></i>
+                            <span>Academic & Vocational Training</span>
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot" style="background-color: var(--accentGreen);"></div>
+                                <span style="font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(16,185,129,0.1); color: var(--accentGreen);">2026</span>
+                                <h4 style="font-size: 1rem; font-weight: bold; margin-top: 0.5rem;">Bano Qabil Training Program</h4>
+                                <p style="font-size: 0.875rem; color: var(--textGray); margin-top: 0.25rem;">Advanced Mobile App Development & Software Engineering track.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot" style="background-color: var(--accentBlue);"></div>
+                                <span style="font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(59,130,246,0.1); color: var(--accentBlue);">2025 - 2026</span>
+                                <h4 style="font-size: 1rem; font-weight: bold; margin-top: 0.5rem;">AGT Institute of Technical & Professional Education</h4>
+                                <p style="font-size: 0.875rem; color: var(--textGray); margin-top: 0.25rem;">Advanced Web Development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-card-alt">
+        <div class="max-w-6xl">
+            <div class="section-header">
+                <h2>Project Showcase</h2>
+                <p>Recent projects developed with timelines, descriptions, and architectural screenshots.</p>
+            </div>
+
+            <div class="grid-1">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-img">
+                            <div style="position: absolute; inset: 0; background: linear-gradient(to top right, rgba(49,46,129,0.4), rgba(6,78,59,0.4));"></div>
+                            <div style="position: relative; z-index: 10;">
+                                <i class="fa-solid fa-cart-shopping" style="font-size: 2.5rem; color: var(--accentGreen); margin-bottom: 0.5rem;"></i>
+                                <p style="font-size: 0.875rem; font-weight: 600;">Flutter Shopping App</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <h3 style="font-size: 1.125rem; font-weight: bold;">Flutter Shopping App</h3>
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: #1f2937; color: var(--textGray);">Flutter / Firebase</span>
+                            </div>
+                            <p style="color: var(--textGray); font-size: 0.875rem; margin-bottom: 1rem;">
+                                A cross-platform mobile shopping application built with Flutter, featuring seamless cart management and dynamic product displays.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="padding: 0 1.5rem 1.5rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--borderColor); padding-top: 1rem;">
+                        <span style="font-size: 0.75rem; color: #6b7280; font-family: monospace;"><i class="fa-solid fa-location-dot" style="color: var(--accentGreen);"></i> Bano Qabil</span>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <a href="https://github.com/eagl520/FANCY-SHOPPING-APP" class="btn-dark" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Code</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="max-w-6xl">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Professional certifications and credentials earned.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 0.75rem; background: rgba(16,185,129,0.1); color: var(--accentGreen); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-award" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: bold; margin-bottom: 0.5rem;">Mobile App Development Diploma</h3>
+                        <p style="font-size: 0.75rem; color: var(--accentGreen); font-family: monospace; margin-bottom: 0.75rem;">Bano Qabil • 2026</p>
+                        <p style="font-size: 0.875rem; color: var(--textGray);">Certified professional training in full-stack Mobile App engineering.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 0.75rem; background: rgba(59,130,246,0.1); color: var(--accentBlue); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-certificate" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: bold; margin-bottom: 0.5rem;">Web Development Diploma</h3>
+                        <p style="font-size: 0.75rem; color: var(--accentBlue); font-family: monospace; margin-bottom: 0.75rem;">AGT Institute of Technical & Professional Education • 2026</p>
+                        <p style="font-size: 0.875rem; color: var(--textGray);">Certified professional training in full-stack Web engineering.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
